@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		988938B81F38D937001BF838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 988938B71F38D937001BF838 /* main.m */; };
 		988938BB1F38D937001BF838 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 988938BA1F38D937001BF838 /* AppDelegate.m */; };
-		988938BE1F38D937001BF838 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988938BD1F38D937001BF838 /* ViewController.m */; };
+		988938BE1F38D937001BF838 /* YMAMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 988938BD1F38D937001BF838 /* YMAMainVC.m */; };
 		988938C11F38D937001BF838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988938BF1F38D937001BF838 /* Main.storyboard */; };
 		988938C31F38D937001BF838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988938C21F38D937001BF838 /* Assets.xcassets */; };
 		988938C61F38D937001BF838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988938C41F38D937001BF838 /* LaunchScreen.storyboard */; };
+		988938CF1F38DEE3001BF838 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988938CE1F38DEE3001BF838 /* AVFoundation.framework */; };
+		988938D41F38E01E001BF838 /* johnny_cash1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 988938D01F38E01E001BF838 /* johnny_cash1.mp3 */; };
+		988938D51F38E01E001BF838 /* johnny_cash2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 988938D11F38E01E001BF838 /* johnny_cash2.mp3 */; };
+		988938D61F38E01E001BF838 /* johnny_cash3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 988938D21F38E01E001BF838 /* johnny_cash3.mp3 */; };
+		988938D71F38E01E001BF838 /* johnny_cash4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 988938D31F38E01E001BF838 /* johnny_cash4.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +25,17 @@
 		988938B71F38D937001BF838 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		988938B91F38D937001BF838 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		988938BA1F38D937001BF838 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		988938BC1F38D937001BF838 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		988938BD1F38D937001BF838 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		988938BC1F38D937001BF838 /* YMAMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMAMainVC.h; sourceTree = "<group>"; };
+		988938BD1F38D937001BF838 /* YMAMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMAMainVC.m; sourceTree = "<group>"; };
 		988938C01F38D937001BF838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		988938C21F38D937001BF838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		988938C51F38D937001BF838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		988938C71F38D937001BF838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988938CE1F38DEE3001BF838 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		988938D01F38E01E001BF838 /* johnny_cash1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = johnny_cash1.mp3; sourceTree = "<group>"; };
+		988938D11F38E01E001BF838 /* johnny_cash2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = johnny_cash2.mp3; sourceTree = "<group>"; };
+		988938D21F38E01E001BF838 /* johnny_cash3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = johnny_cash3.mp3; sourceTree = "<group>"; };
+		988938D31F38E01E001BF838 /* johnny_cash4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = johnny_cash4.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988938CF1F38DEE3001BF838 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			children = (
 				988938B51F38D937001BF838 /* Mp3Player */,
 				988938B41F38D937001BF838 /* Products */,
+				988938CD1F38DEE2001BF838 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +70,9 @@
 		988938B51F38D937001BF838 /* Mp3Player */ = {
 			isa = PBXGroup;
 			children = (
-				988938B91F38D937001BF838 /* AppDelegate.h */,
-				988938BA1F38D937001BF838 /* AppDelegate.m */,
-				988938BC1F38D937001BF838 /* ViewController.h */,
-				988938BD1F38D937001BF838 /* ViewController.m */,
+				988938BC1F38D937001BF838 /* YMAMainVC.h */,
+				988938BD1F38D937001BF838 /* YMAMainVC.m */,
 				988938BF1F38D937001BF838 /* Main.storyboard */,
-				988938C21F38D937001BF838 /* Assets.xcassets */,
-				988938C41F38D937001BF838 /* LaunchScreen.storyboard */,
-				988938C71F38D937001BF838 /* Info.plist */,
 				988938B61F38D937001BF838 /* Supporting Files */,
 			);
 			path = Mp3Player;
@@ -74,9 +81,26 @@
 		988938B61F38D937001BF838 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				988938C71F38D937001BF838 /* Info.plist */,
+				988938B91F38D937001BF838 /* AppDelegate.h */,
+				988938BA1F38D937001BF838 /* AppDelegate.m */,
+				988938C21F38D937001BF838 /* Assets.xcassets */,
+				988938C41F38D937001BF838 /* LaunchScreen.storyboard */,
+				988938D01F38E01E001BF838 /* johnny_cash1.mp3 */,
+				988938D11F38E01E001BF838 /* johnny_cash2.mp3 */,
+				988938D21F38E01E001BF838 /* johnny_cash3.mp3 */,
+				988938D31F38E01E001BF838 /* johnny_cash4.mp3 */,
 				988938B71F38D937001BF838 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		988938CD1F38DEE2001BF838 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				988938CE1F38DEE3001BF838 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +129,7 @@
 		988938AB1F38D937001BF838 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YMA;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Mikhail Yaskou";
 				TargetAttributes = {
@@ -138,9 +163,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988938D71F38E01E001BF838 /* johnny_cash4.mp3 in Resources */,
 				988938C61F38D937001BF838 /* LaunchScreen.storyboard in Resources */,
+				988938D61F38E01E001BF838 /* johnny_cash3.mp3 in Resources */,
 				988938C31F38D937001BF838 /* Assets.xcassets in Resources */,
 				988938C11F38D937001BF838 /* Main.storyboard in Resources */,
+				988938D51F38E01E001BF838 /* johnny_cash2.mp3 in Resources */,
+				988938D41F38E01E001BF838 /* johnny_cash1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				988938BE1F38D937001BF838 /* ViewController.m in Sources */,
+				988938BE1F38D937001BF838 /* YMAMainVC.m in Sources */,
 				988938BB1F38D937001BF838 /* AppDelegate.m in Sources */,
 				988938B81F38D937001BF838 /* main.m in Sources */,
 			);
