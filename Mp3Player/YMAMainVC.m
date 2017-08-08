@@ -53,12 +53,10 @@ static const NSInteger YMASecondsInMinutes = 60;
 - (void)play {
     [self.player play];
     if (!self.timer) {
-    self.timer = [NSTimer
-                  scheduledTimerWithTimeInterval: 1
-                  target:self
-                  selector:@selector(timerFired:)
-                  userInfo:nil
-                  repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                  target:self
+                                                selector:@selector(timerFired:)
+                                                userInfo:nil repeats:YES];
     }
 }
 
