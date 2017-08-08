@@ -47,7 +47,7 @@ static const NSInteger YMASecondsInMinutes = 60;
     self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:self.audioURL error:nil];
     [self.player prepareToPlay];
     [self updateDisplay];
-    self.seekBarSlide.maximumValue = (float) self.player.duration;
+    self.seekBarSlide.maximumValue = self.player.duration;
 }
 
 - (void)play {
@@ -55,8 +55,10 @@ static const NSInteger YMASecondsInMinutes = 60;
     if (!self.timer) {
     self.timer = [NSTimer
                   scheduledTimerWithTimeInterval: 1
-                  target:self selector:@selector(timerFired:)
-                  userInfo:nil repeats:YES];
+                  target:self
+                  selector:@selector(timerFired:)
+                  userInfo:nil
+                  repeats:YES];
     }
 }
 
@@ -74,7 +76,7 @@ static const NSInteger YMASecondsInMinutes = 60;
 #pragma mark - UIManagment
 
 - (void)updateDisplay {
-    self.seekBarSlide.value = (float) self.player.currentTime;
+    self.seekBarSlide.value = self.player.currentTime;
     [self updateTitles];
 }
 
@@ -102,13 +104,13 @@ static const NSInteger YMASecondsInMinutes = 60;
 
 - (IBAction)changeSongTapped:(UIButton *)sender {
     //get from button tag (1 in next or -1 in prev button)
-    self.currentSongIndex += (int) sender.tag;
+    self.currentSongIndex += sender.tag;
     if (self.currentSongIndex < self.playlist.count) {
         [self configPlayer];
     } else
     {
-        //if index not in array - cancel index change
-        self.currentSongIndex -=(int) sender.tag;
+        //if index not in array - cancel index changes
+        self.currentSongIndex -= sender.tag;
     }
     [self play];
 }
@@ -142,7 +144,7 @@ static const NSInteger YMASecondsInMinutes = 60;
     NSInteger timeInterval = (NSInteger)interval;
     NSInteger seconds = timeInterval % YMASecondsInMinutes;
     NSInteger minutes = (timeInterval / YMASecondsInMinutes) % YMASecondsInMinutes;
-    return [NSString stringWithFormat:@"%02ld:%02ld", (long) minutes, (long) seconds];
+    return [NSString stringWithFormat:@"%02ld:%02ld", minutes, seconds];
 }
 
 @end
