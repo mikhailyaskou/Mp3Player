@@ -56,7 +56,8 @@ static const NSInteger YMASecondsInMinutes = 60;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1
                                                   target:self
                                                 selector:@selector(timerFired:)
-                                                userInfo:nil repeats:YES];
+                                                userInfo:nil
+                                                 repeats:YES];
     }
 }
 
